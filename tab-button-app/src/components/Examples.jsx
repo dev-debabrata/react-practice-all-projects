@@ -18,18 +18,18 @@ export default function Examples() {
 
   if (selectedTopic) {
     tabContent = (
-      <div id="tab-content">
-        <h3>{EXAMPLES[selectedTopic].title}</h3>
+      <div className="p-4 rounded-xl bg-[#2f1d43] shadow-2xl">
+        <h3 className="m-0">{EXAMPLES[selectedTopic].title}</h3>
         <p>{EXAMPLES[selectedTopic].description}</p>
         <pre>
-          <code>{EXAMPLES[selectedTopic].code}</code>
+          <code className="text-sm">{EXAMPLES[selectedTopic].code}</code>
         </pre>
       </div>
     );
   }
 
   return (
-    <Section title="Examples" id="examples">
+    <Section title="Examples">
       <Tabs
         buttons={
           <>
@@ -61,6 +61,18 @@ export default function Examples() {
         }
       >
         {tabContent}
+
+        {/* Or this code */}
+        {/* {!selectedTopic && <p>Please select a topic.</p>}
+        {selectedTopic && (
+          <div className="p-4 rounded-xl bg-[#2f1d43] shadow-2xl">
+            <h3 className="m-0">{EXAMPLES[selectedTopic].title}</h3>
+            <p>{EXAMPLES[selectedTopic].description}</p>
+            <pre>
+              <code className="text-sm">{EXAMPLES[selectedTopic].code}</code>
+            </pre>
+          </div>
+        )} */}
       </Tabs>
     </Section>
   );

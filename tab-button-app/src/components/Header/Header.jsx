@@ -1,5 +1,4 @@
 import reactImg from '../../assets/react-core-concepts.png';
-import './Header.css';
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
@@ -11,10 +10,13 @@ export default function Header() {
   const description = reactDescriptions[genRandomInt(2)];
 
   return (
-    <header>
-      <img src={reactImg} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
+    <header className=" flex flex-col justify-center items-center mt-12">
+      <img
+        src={reactImg}
+        alt="Stylized atom"
+        className=" h-20 w-40 object-cover" />
+      <h1 className="my-5 font-bold text-7xl ">React Essentials</h1>
+      <p className="mb-10 text-xl">
         {description} React concepts you will need for almost any app you are
         going to build!
       </p>

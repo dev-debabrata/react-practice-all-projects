@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="w-[90%] max-w-[1000px] m-auto">
         <CoreConcepts />
         <Examples />
       </main>
