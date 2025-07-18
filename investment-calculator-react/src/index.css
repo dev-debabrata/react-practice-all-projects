@@ -1,1 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-roboto-condensed: "Roboto Condensed", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000e4;
+  color: #e1eeeb;
+  min-height: 100vh;
+}
