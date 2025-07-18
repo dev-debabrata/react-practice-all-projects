@@ -7,7 +7,8 @@
 } */
 
 @theme {
-  --animation-flash: flash 1s infinite; /* Define your custom animation variable */
+  --animation-flash: flash 1s infinite;
+  --font-handjet: "Handjet", monospace;
 
   @keyframes flash {
     0% {
@@ -29,9 +30,16 @@
 body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background: radial-gradient(#186a5e, #053339); */
+  background-color: #1d110be4;
   color: #e1eeeb;
   min-height: 100vh;
+}
+
+#content {
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #0c0a09;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }

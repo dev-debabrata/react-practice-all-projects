@@ -40,7 +40,7 @@ export default function TimerChallenge({ title, targetTime }) {
         remainingTime={timeRemaining}
         onReset={handleReset}
       />
-      <section className="w-[22rem] flex flex-col items-center justify-center p-8 my-8 mx-auto bg-[linear-gradient(#4df8df,_#4df0f8)] text-[#221c18] shadow-[0_2px_8px_rgba(35,34,34,0.6)] rounded-md">
+      <section className="w-[22rem] flex flex-col items-center justify-center p-8 my-8 mx-auto bg-stone-200 text-[#221c18] shadow-stone-50 rounded-md">
         <h2 className=" text-2xl m-0 tracking-widest text-center uppercase text-[#221c18]">{title}</h2>
         <p className="border border-[#46cebe] rounded px-2 py-1 m-2">
           {targetTime} second{targetTime > 1 ? 's' : ''}
@@ -59,3 +59,6 @@ export default function TimerChallenge({ title, targetTime }) {
     </>
   );
 }
+
+
+// bg - [linear - gradient(#4df8df, _#4df0f8)]
