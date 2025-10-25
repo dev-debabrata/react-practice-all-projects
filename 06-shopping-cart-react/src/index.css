@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Merriweather:wght@400;700&display=swap");
+
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#31220b, #382e1b);
+  color: #f3e7d4;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .animate-fade-slide-top {
+    @apply animate-[fade-slide-in-from-top_0.3s_ease-in-out];
+  }
+  .animate-fade-slide-right {
+    @apply animate-[fade-slide-in-from-right_0.3s_ease-in-out];
+  }
+  dialog::backdrop {
+    @apply bg-black/70;
+  }
+}
+
+@keyframes fade-slide-in-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-slide-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
