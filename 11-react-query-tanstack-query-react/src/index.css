@@ -16,6 +16,10 @@ body {
   min-height: 100vh;
 }
 
+dialog::backdrop {
+  @apply bg-black/50;
+}
+
 ul {
   list-style: none;
   margin: 0;

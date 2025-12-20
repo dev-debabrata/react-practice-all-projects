@@ -16,7 +16,9 @@ export default function Modal({ children, onClose }) {
   }, []);
 
   return createPortal(
-    <dialog className="modal" ref={dialog} onClose={onClose}>
+    <dialog className="fixed top-[10vh] left-1/2 -translate-x-1/2 w-120 max-h-[80vh] p-8 m-0 bg-[#e2e5eb] rounded-md z-100 shadow-[0_2px_8px_rgba(0,0,0,0.26)] flex flex-col justify-between animate-[slide-down-fade-in_300ms_ease-out_forwards]"
+      ref={dialog}
+      onClose={onClose}>
       {children}
     </dialog>,
     document.getElementById('modal')

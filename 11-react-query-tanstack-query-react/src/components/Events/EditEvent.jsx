@@ -66,7 +66,9 @@ export default function EditEvent() {
           }
         />
         <div className=" flex justify-end items-center gap-8">
-          <Link to="../" className="px-6 py-2 bg-[#e30d7c] text-white font-bold rounded shadow hover:bg-[#e30d5b] hover:shadow-lg">
+          <Link
+            to="../"
+            className="px-6 py-2 bg-[#e30d7c] text-white font-bold rounded shadow hover:bg-[#e30d5b] hover:shadow-lg">
             Okay
           </Link>
         </div>
