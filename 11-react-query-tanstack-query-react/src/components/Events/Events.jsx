@@ -10,7 +10,8 @@ export default function Events() {
     <>
       <Outlet />
       <Header>
-        <Link to="/events/new"
+        <Link
+          to="/events/new"
           className="px-6 py-2 bg-[#e30d7c] text-white font-bold rounded shadow
          hover:bg-[#e30d5b] hover:shadow-lg">
           New Event

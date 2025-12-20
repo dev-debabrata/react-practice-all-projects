@@ -30,7 +30,7 @@ export default function NewEventsSection() {
 
   if (data) {
     content = (
-      <ul className="events-list">
+      <ul className="max-w-240 grid gap-12 grid-cols-[repeat(auto-fill,minmax(15rem,1fr))]">
         {data.map((event) => (
           <li key={event.id}>
             <EventItem event={event} />
@@ -41,9 +41,11 @@ export default function NewEventsSection() {
   }
 
   return (
-    <section className="content-section" id="new-events-section">
+    <section className="my-12 mb-24 px-[15%]" id="new-events-section">
       <header>
-        <h2>Recently added events</h2>
+        <h2 className="text-3xl font-['Quicksand'] my-8 text-[#b6cad5]">
+          Recently added events
+        </h2>
       </header>
       {content}
     </section>

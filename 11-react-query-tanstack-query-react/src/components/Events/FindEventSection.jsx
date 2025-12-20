@@ -38,7 +38,7 @@ export default function FindEventSection() {
 
   if (data) {
     content = (
-      <ul className="max-w-[60rem] grid gap-12 grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] list-none m-0 p-0">
+      <ul className="max-w-240 grid gap-12 grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] list-none m-0 p-0">
         {data.map((event) => (
           <li key={event.id}>
             <EventItem event={event} />
