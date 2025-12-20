@@ -7,7 +7,8 @@ export default function Header({ children }) {
       <div className='h-8 -mb-8 text-center accent-[#e30d7c]'>
         {fetching > 0 && <progress />}
       </div>
-      <header className='m-0 px-[15%] py-8 flex justify-between items-center'>
+      <header className="m-0 px-[15%] py-8 flex justify-between items-center bg-linear-to-r from-slate-800 to-slate-900">
+
         <div className='flex items-center gap-6'>
           <h1 className='text-2xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.26)]'>
             React Events
